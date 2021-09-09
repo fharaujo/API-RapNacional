@@ -1,2 +1,2 @@
 # API-RapNacional
-Cadastro dos artistas do Rap Nacional e suas obras lançadas.
+Cadastro dos melhores álbuns de Rap Nacional e seus artistas.
