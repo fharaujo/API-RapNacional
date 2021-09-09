@@ -10,7 +10,7 @@ const connectionDB = () => {
   const dbPassword = process.env.DB_PASSWORD;
   const dbName = process.env.DB_NAME;
   const dbChar = process.env.DB_CHAR;
-  const connectionString = `mongodb+srv://mainAdmin:<password>@cluster0.ionvg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+  const connectionString = `mongodb+srv://${dbUser}:${dbPassword}@cluster0.${{dbChar}}.mongodb.net/${dbName}?retryWrites=true&w=majority`;
   const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
