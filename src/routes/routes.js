@@ -17,9 +17,6 @@ const DiscMiddleware = require("../middlewares/DiscMiddlewares");
  *          - description
  *          - releaseYear
  *        properties:
- *           id:
- *             type: string 
- *             description: The auto-generated id of the disc
  *           name:
  *              type: string
  *              description: The disc title
@@ -39,7 +36,6 @@ const DiscMiddleware = require("../middlewares/DiscMiddlewares");
  *              type: integer
  *              description: The year release disc
  *        example:
- *        
  *           name: Sobrevivendo no Inferno
  *           artist: Racionais MC's
  *           imgURL: http://imagens.com/capa.jpg
