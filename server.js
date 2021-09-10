@@ -32,7 +32,7 @@ const options = {
     },
     servers: [
       {
-        url: "https://api-rapnacional.herokuapp.com/",
+        url: "https://api-rapnacional.herokuapp.com/api-documentation",
       },
     ],
     basePath: "/",
