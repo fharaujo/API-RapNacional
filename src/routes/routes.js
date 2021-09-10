@@ -35,7 +35,7 @@ const DiscMiddleware = require("../middlewares/DiscMiddlewares");
  *           description:
  *              type: string
  *              description: The brave text of the disc
- *           yearRelease:
+ *           releaseYear:
  *              type: integer
  *              description: The year release disc
  *        
