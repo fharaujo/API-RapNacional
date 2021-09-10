@@ -1,6 +1,5 @@
 const Disc = require("../models/Disc");
 
-// funções assincrônas de controllers
 
 // getAll controller
 const getAll = async (req, res) => {
