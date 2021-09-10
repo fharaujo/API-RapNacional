@@ -5,6 +5,10 @@ const discSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
+  artist: {
+    type: String,
+    require: true,
+  },
   imgURL: {
     type: String,
   },
@@ -16,4 +20,6 @@ const discSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Disc", discSchema)
+discSchema.set("versionKey", false);
+const Disc = mongoose.model("Disc", discSchema);
+module.exports = Disc;
