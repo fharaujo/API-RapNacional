@@ -25,7 +25,8 @@ const options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "API Rap Nacional - 2021 [ Projeto Módulo 3 - Back-end Blue Edtech]",
+      title:
+        "API Rap Nacional - 2021 [ Projeto Módulo 3 - Back-end Blue Edtech]",
       version: "1.0.0",
       description:
         "Catálogo dos melhores discos/cds/eps de Rap Nacional e seus respectivos artistas.",
