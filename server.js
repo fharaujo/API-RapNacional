@@ -28,7 +28,7 @@ const options = {
       title: "API Rap Nacional 2021",
       version: "1.0.0",
       description:
-        "Catálogo dos melhores discos/cds/eps de Rap Nacional e seus artistas.",
+        "Catálogo dos melhores discos/cds/eps de Rap Nacional e seus respectivos artistas.",
     },
     servers: [
       {
