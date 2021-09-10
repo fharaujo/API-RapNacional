@@ -12,7 +12,9 @@ const isValidId = async (req, res, next) => {
   try {
     const disc = await Disc.findById(id);
     res.disc = disc;
-  } catch (error) {}
+  } catch (error) {
+    res.status(500).send({ error: error });
+  }
 
   next();
 };
