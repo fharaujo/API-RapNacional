@@ -12,6 +12,10 @@ const discSchema = new mongoose.Schema({
   imgURL: {
     type: String,
   },
+  companyRecord: {
+    type: String,
+    require: true,
+  },
   description: {
     type: String,
   },

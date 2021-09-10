@@ -1,4 +1,6 @@
+
 const Disc = require("../models/Disc");
+
 
 // funções assincrônas de controllers
 
@@ -12,6 +14,7 @@ const getAll = async (req, res) => {
   }
 };
 
+// gelById controller
 const getById = async (req, res) => {
   const { id } = req.params;
   try {
@@ -20,15 +23,27 @@ const getById = async (req, res) => {
       res.status(404).send({ error: "Disco não encontrado." });
       return;
     }
+    return res.status(200).send({ disc });
   } catch (error) {
     res.status(500).send({ err: error });
   }
 };
-const create = async (req, res) => {
-  const { name, artist, imgURL, description, releaseYear } = req.body;
 
-  if (!name || !artist || !imgURL || !description || !releaseYear) {
-    res.status(400).send({ message: "Precisa preencher os campos pedidos." });
+// Create controller
+const create = async (req, res) => {
+  const { name, artist, imgURL, companyRecord, description, releaseYear } = req.body;
+
+  if (
+    !name ||
+    !artist ||
+    !imgURL ||
+    !companyRecord ||
+    !description ||
+    !releaseYear
+  ) {
+    res
+      .status(400)
+      .send({ message: "Necessário preencher os campos pedidos." });
     return;
   }
 
@@ -36,19 +51,25 @@ const create = async (req, res) => {
     name,
     artist,
     imgURL,
+    companyRecord,
     description,
     releaseYear,
   });
 
-
   try {
     await newDisc.save();
-    return res.status(201).send({message: "Disco inserido com sucesso."})
+    return res.status(201).send({ message: "Disco inserido com sucesso.", newDisc });
   } catch (error) {
-    res.status(500).send({err: error})
+    res.status(500).send({ err: error });
   }
 };
-const update = (req, res) => {};
+
+// update controller
+const update = async (req, res) => {
+  const {id} = req.params
+
+
+};
 const remove = (req, res) => {};
 
 module.exports = {
