@@ -38,14 +38,7 @@ const DiscMiddleware = require("../middlewares/DiscMiddlewares");
  *           yearRelease:
  *              type: integer
  *              description: The year release disc
- *        example:
- *           id: gi34gfdpp44454r
- *           name: Sobrevivendo no Inferno
- *           artist: Racionais MC's
- *           imgURL: http://imagens.com/capa.jpg
- *           companyRecord: CosaNostra
- *           description: sales record album
- *           yearRelease: 1997
+ *        
  *           
  *              
  */
