@@ -18,7 +18,7 @@ const DiscMiddleware = require("../middlewares/DiscMiddlewares");
  *          - releaseYear
  *        properties:
  *           id:
- *             type: string
+ *             type: string       
  *             description: The auto-generated id of the disc
  *           name:
  *              type: string
@@ -46,14 +46,14 @@ const DiscMiddleware = require("../middlewares/DiscMiddlewares");
  *           companyRecord: CosaNostra
  *           description: sales record album
  *           yearRelease: 1997
- *
- *
+ *           
+ *              
  */
 /**
  * @swagger
  * /discs:
  *   get:
- *     summary: get all discs
+ *     summary: get all discs 
  *     tags:
  *       - Discs All
  *     description: Returns all discs
@@ -94,7 +94,7 @@ routes.get("/discs/:id", DiscMiddleware.isValidId, DiscController.getById);
  * @swagger
  * /discs:
  *   post:
- *     summary: Create a new single disc
+ *     summary: Create a new single disc 
  *     tags:
  *       - Disc Create
  *     description: Create a new disc
