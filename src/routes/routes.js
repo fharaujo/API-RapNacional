@@ -18,7 +18,7 @@ const DiscMiddleware = require("../middlewares/DiscMiddlewares");
  *          - releaseYear
  *        properties:
  *           id:
- *             type: string       
+ *             type: string
  *             description: The auto-generated id of the disc
  *           name:
  *              type: string
@@ -37,13 +37,13 @@ const DiscMiddleware = require("../middlewares/DiscMiddlewares");
  *              description: The brave text of the disc
  *           releaseYear:
  *              type: integer
- *              description: The year release disc            
+ *              description: The year release disc
  */
 /**
  * @swagger
  * /discs:
  *   get:
- *     summary: get all discs 
+ *     summary: get all discs
  *     tags:
  *       - Discs All
  *     description: Returns all discs
@@ -84,22 +84,22 @@ routes.get("/discs/:id", DiscMiddleware.isValidId, DiscController.getById);
  * @swagger
  * /discs:
  *   post:
- *     summary: Create a new single disc 
+ *     summary: Create a new single disc
  *     tags: [Disc Create]
  *     requestBody:
  *       required: true
  *       content:
- *          application/json
- *              schema:
- *                  $ref: '#/components/schemas/Disc'
+ *          application/json:
+ *            schema:
+ *              $ref: '#/components/schemas/Disc'
  *     responses:
  *       200:
  *         description: The Disc was successfully created
  *         content:
- *              application/json
- *                  schema:
- *                       $ref: '#/components/schemas/Disc'
- */ 
+ *            application/json:
+ *                schema:
+ *                   $ref: '#/components/schemas/Disc'
+ */
 routes.post("/discs", DiscController.create);
 /**
  * @swagger
