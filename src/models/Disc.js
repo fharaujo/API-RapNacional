@@ -3,24 +3,33 @@ const mongoose = require("mongoose");
 const discSchema = new mongoose.Schema({
   name: {
     type: String,
-    require: true,
+    required: [true, "Name required"],
+    lowercase: true,
   },
   artist: {
     type: String,
-    require: true,
+    required: [true, "Name required"],
+    lowercase: true,
   },
   imgURL: {
     type: String,
+    required: [true, "Name required"],
+    lowercase: true,
   },
   companyRecord: {
     type: String,
-    require: true,
+    required: [true, "Name required"],
+    lowercase: true,
   },
   description: {
     type: String,
+    required: [true, "Name required"],
+    lowercase: true,
   },
   releaseYear: {
     type: Number,
+    required: [true, "Name required"],
+    lowercase: true,
   },
 });
 
