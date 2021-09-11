@@ -112,7 +112,7 @@ routes.post("/discs", DiscController.create);
  *       - in: path
  *         name: id
  *         schema:
- *         type: string
+ *            type: string
  *         required: true
  *         description: The disc id
  *     requestBody:
