@@ -114,7 +114,7 @@ routes.post("/discs", DiscController.create);
  * /discs/{id}:
  *   put:
  *     summary: Update a single disc by the id
- *     tags: [Discs Update]
+ *     tags: [Disc Update]
  *     parameters:
  *       - in: path
  *         name: id
