@@ -38,6 +38,14 @@ const DiscMiddleware = require("../middlewares/DiscMiddlewares");
  *           releaseYear:
  *              type: integer
  *              description: The year release disc
+ *        example:
+ *          id: 43hfd83ekd93kd93l34
+ *          name: Nome do cd
+ *          artist: Nome do artista
+ *          imgURL: url da capa
+ *          companyRecord: Nome da gravadora
+ *          description: Texto sobre o cd
+ *          releaseYear: 2021
  */
 /**
  * @swagger
