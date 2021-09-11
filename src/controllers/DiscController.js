@@ -1,5 +1,6 @@
 const Disc = require("../models/Disc");
 
+
 // getAll controller
 const getAll = async (req, res) => {
   try {
@@ -55,7 +56,9 @@ const create = async (req, res) => {
 
   try {
     await newDisc.save();
-    return res.status(201).send(newDisc);
+    return res
+      .status(201)
+      .send({ message: "Disco inserido com sucesso.", newDisc });
   } catch (error) {
     res.status(500).send({ err: error });
   }
