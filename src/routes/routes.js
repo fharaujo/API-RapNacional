@@ -111,7 +111,7 @@ routes.post("/discs", DiscController.create);
  *       - in: path
  *         name: id
  *         schema:
- *            type: string
+ *           type: string
  *         required: true
  *         description: The disc id
  *     requestBody:
@@ -122,7 +122,11 @@ routes.post("/discs", DiscController.create);
  *              $ref: '#/components/schemas/Disc'
  *     responses:
  *       200:
- *         description: Successfully updated
+ *         description: The Disc was successfully created
+ *         content:
+ *            application/json:
+ *                schema:
+ *                   $ref: '#/components/schemas/Disc'
  */
 routes.put("/discs/:id", DiscMiddleware.isValidId, DiscController.update);
 /**
