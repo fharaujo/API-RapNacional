@@ -85,22 +85,21 @@ routes.get("/discs/:id", DiscMiddleware.isValidId, DiscController.getById);
  * /discs:
  *   post:
  *     summary: Create a new single disc 
- *     tags:
- *       - Disc Create
- *     description: Create a new disc
- *     produces:
- *       - application/json
- *     parameters:
- *       - name: disc
- *         description: Disc object
- *         in: body
- *         required: true
- *         schema:
- *           $ref: '#/components/schemas/Disc'
+ *     tags: [Disc Create]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *          application/json
+ *              schema:
+ *                  $ref: '#/components/schemas/Disc'
  *     responses:
  *       200:
- *         description: Successfully created
- */
+ *         description: The Disc was successfully created
+ *         content:
+ *              application/json
+ *                  schema:
+ *                       $ref: '#/components/schemas/Disc'
+ */ 
 routes.post("/discs", DiscController.create);
 /**
  * @swagger

@@ -55,7 +55,7 @@ const create = async (req, res) => {
 
   try {
     await newDisc.save();
-    res.status(201).send({ message: "Disco inserido com sucesso.", newDisc });
+    res.status(200).send({ message: "Disco inserido com sucesso.", newDisc });
   } catch (error) {
     res.status(500).send({ err: error });
   }
