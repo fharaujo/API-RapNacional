@@ -240,11 +240,12 @@ routes.get("/filterByArtistName", DiscController.filterByArtistName);
  *          parameters:
  *            - in: query
  *              name: name
- *              artist: artist
- *              companyRecord: companyRecord
- *              type: array
  *              items:
  *                type: string
+ *            - in: query
+ *              name: artist
+ *              items:
+                  type: string
  *          responses:
  *              "200":
  *                  description: sucessful operation
