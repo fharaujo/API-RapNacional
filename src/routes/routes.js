@@ -172,10 +172,17 @@ routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
 // route filter by name
 /**
  * @swagger
+ * openapi: '3.0.0'
+info:
+  description: >-
+    Repro API
+  title: Filter By Name
+  version: '1.0'
  * paths:
  *    /filterByNameDisc:
  *        tags: Filter By Name
  *        get:
+ *          summary: Get filter By name
  *          parameters:
  *            - in: query
  *              name: name
