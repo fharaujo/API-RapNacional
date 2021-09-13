@@ -178,12 +178,18 @@ routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
  *      tags: Filter By Name
  *   parameters:
  *      - in: query
- *        name: "name"
+ *        name: filter
  *        description: Filter by name
- *        schema:
- *          type: array
- *          items: string
- *        style: form
+ *        content:
+ *           application/json:
+ *              schema:
+ *                type: array
+ *              items: string
+ *              properties: 
+ *                  type:
+ *                      type: string
+ *                  color:
+ *                      type: string
  *        examples:
  *           OnName:
  *              summary: Exemple of a single name
