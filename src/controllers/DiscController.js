@@ -134,7 +134,7 @@ const filterByArtistName = async (req, res) => {
   try {
     const artists = await Disc.find({ artist: { $regex: `${nameArtist}` } });
     if (artists.length === 0) {
-      res.status(400).send({ message: "Disco não encontrado." });
+      res.status(400).send({ message: "Artista não encontrado." });
     }
     res.send({ artists });
   } catch (error) {
