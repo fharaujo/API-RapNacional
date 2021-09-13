@@ -169,13 +169,33 @@ routes.put("/discs/:id", DiscMiddleware.isValidId, DiscController.update);
  */
 routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
 
+/**
+ * @swagger
+ * /filterByNameDisc:
+ *   query:
+ *      summary: Filter by name disc
+ *      tags: Filter By Name
+ *   parameters:
+ *      - in: query
+ *        name: id
+ *        description: Filter by name
+ *        schema:
+ *          type: array
+ *          items: string
+ *        style: form
+ *        examples:
+ *           OnName:
+ *              summary: Exemple of a single name
+ *              value: Nome do CD  #?name=nomedocd
+ */
+
 // route filter by name
 routes.get("/filterByNameDisc", DiscController.filterByNameDisc);
 
 // route filter by artist name
-routes.get("/filterByArtistName", DiscController.filterByArtistName)
+routes.get("/filterByArtistName", DiscController.filterByArtistName);
 
 // route filter all
-routes.get("/filterAll", DiscController.filterAll)
+routes.get("/filterAll", DiscController.filterAll);
 
 module.exports = routes;
