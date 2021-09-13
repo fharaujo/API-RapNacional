@@ -176,6 +176,7 @@ routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
  *    /filterByNameDisc:
  *        tags: Filter By Name
  *        get:
+ *          tags: Filter By name
  *          summary: Get filter By name
  *          parameters:
  *            - in: query
