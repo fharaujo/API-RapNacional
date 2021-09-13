@@ -175,7 +175,7 @@ routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
  * paths:
  *    /filterByNameDisc:
  *        get:
- *          tags: Query Filters
+ *          tags: [Query Filters]
  *          summary: Get filter By name
  *          parameters:
  *            - in: query
@@ -197,7 +197,7 @@ routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
  * 
  * /filterByArtistName:
  *        get:
- *          tags: Query Filters
+ *          tags: [Query Filters]
  *          summary: Get filter By Artist name
  *          parameters:
  *            - in: query
