@@ -104,7 +104,7 @@ const remove = async (req, res) => {
   }
 };
 
-// query filters
+// query filter by name disc
 const filterByNameDisc = async (req, res) => {
   const nameDisc = req.query.name;
 
@@ -113,10 +113,26 @@ const filterByNameDisc = async (req, res) => {
   }
 
   try {
-    const discs = await Disc.find({ name: { $regex: `${nameDisc}` } });
-    res.status(200).send({discs})
+    const discs = await Disc.find({ 'name': { '$regex': `${nameDisc}` } });
+    res.status(200).send({ discs });
   } catch (error) {
-    res.status(500).send({error: error.message})
+    res.status(500).send({ error: error.message });
+  }
+};
+
+// query filter by artist name
+const filterByArtistName = async (req, res) => {
+  const nameArtist = req.query.artist;
+
+  if (!nameArtist) {
+    res.status(400).send({ message: "Parâmetro não recebido." });
+  }
+
+  try {
+    const artists = await Disc.find({ 'artist': { '$regex': `${nameArtist}` } });
+    res.status(200).send({ artists });
+  } catch (error) {
+    res.status(500).send({ error: error.message });
   }
 };
 
@@ -127,4 +143,5 @@ module.exports = {
   update,
   remove,
   filterByNameDisc,
+  filterByArtistName,
 };

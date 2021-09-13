@@ -172,4 +172,7 @@ routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
 // route filter by name
 routes.get("/filterByNameDisc", DiscController.filterByNameDisc);
 
+// router filter by artist name
+routes.get("/filterByArtistName", DiscController.filterByArtistName)
+
 module.exports = routes;
