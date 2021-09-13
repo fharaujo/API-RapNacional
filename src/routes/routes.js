@@ -244,6 +244,9 @@ routes.get("/filterByArtistName", DiscController.filterByArtistName);
  *            - in: query
  *              name: artist
  *              type: string
+ *            - in: query
+ *              name: companyRecord
+ *              type: string
  *          responses:
  *              "200":
  *                  description: sucessful operation
@@ -256,6 +259,8 @@ routes.get("/filterByArtistName", DiscController.filterByArtistName);
  *                         name:
  *                           type: string
  *                         artist:
+ *                           type: string
+ *                         companyRecord:
  *                           type: string
  *
  *
