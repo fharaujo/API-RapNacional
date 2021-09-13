@@ -3,6 +3,7 @@ const routes = require("express").Router();
 const DiscController = require("../controllers/DiscController");
 const DiscMiddleware = require("../middlewares/DiscMiddlewares");
 
+// config swagger project
 /**
  * @swagger
  * components:
@@ -47,6 +48,8 @@ const DiscMiddleware = require("../middlewares/DiscMiddlewares");
  *          description: Texto sobre o cd
  *          releaseYear: 2021
  */
+
+// route get all discs
 /**
  * @swagger
  * /discs:
@@ -64,6 +67,8 @@ const DiscMiddleware = require("../middlewares/DiscMiddlewares");
  *           $ref: '#/components/schemas/Disc'
  */
 routes.get("/discs", DiscController.getAll);
+
+// route get by id disc
 /**
  * @swagger
  * /discs/{id}:
@@ -86,8 +91,9 @@ routes.get("/discs", DiscController.getAll);
  *         schema:
  *           $ref: '#/components/schemas/Disc'
  */
-
 routes.get("/discs/:id", DiscMiddleware.isValidId, DiscController.getById);
+
+// post create disc
 /**
  * @swagger
  * /discs:
@@ -109,6 +115,8 @@ routes.get("/discs/:id", DiscMiddleware.isValidId, DiscController.getById);
  *                   $ref: '#/components/schemas/Disc'
  */
 routes.post("/discs", DiscController.create);
+
+// route update by id disc
 /**
  * @swagger
  * /discs/{id}:
@@ -137,6 +145,8 @@ routes.post("/discs", DiscController.create);
  *                   $ref: '#/components/schemas/Disc'
  */
 routes.put("/discs/:id", DiscMiddleware.isValidId, DiscController.update);
+
+// router delete by id disc
 /**
  * @swagger
  * /discs/{id}:
@@ -158,5 +168,8 @@ routes.put("/discs/:id", DiscMiddleware.isValidId, DiscController.update);
  *         description: Successfully deleted
  */
 routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
+
+// route filter by name
+routes.get("/filterByNameDisc", DiscController.filterByNameDisc);
 
 module.exports = routes;

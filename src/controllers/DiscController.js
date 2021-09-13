@@ -6,7 +6,7 @@ const getAll = async (req, res) => {
     const discs = await Disc.find(); // promise para retorno dos dados no banco
     return res.send({ discs });
   } catch (error) {
-    return res.status(500).send({ err: error });
+    return res.status(500).send({ err: error.message });
   }
 };
 
@@ -21,7 +21,7 @@ const getById = async (req, res) => {
     }
     return res.status(200).send({ disc });
   } catch (error) {
-    res.status(500).send({ err: error });
+    res.status(500).send({ err: error.message });
   }
 };
 
@@ -57,7 +57,7 @@ const create = async (req, res) => {
     await newDisc.save();
     res.status(200).send({ message: "Disco inserido com sucesso.", newDisc });
   } catch (error) {
-    res.status(500).send({ err: error });
+    res.status(500).send({ err: error.message });
   }
 };
 
@@ -90,7 +90,7 @@ const update = async (req, res) => {
     await res.disc.save();
     res.send({ message: "Disco atualizado com sucesso." });
   } catch (error) {
-    res.status(500).send({ error: error });
+    res.status(500).send({ error: error.message });
   }
 };
 
@@ -100,7 +100,23 @@ const remove = async (req, res) => {
     await res.disc.remove();
     return res.send({ message: "Disco removido com sucesso." });
   } catch (error) {
-    res.status(500).send({ error: error });
+    res.status(500).send({ error: error.message });
+  }
+};
+
+// query filters
+const filterByNameDisc = async (req, res) => {
+  const nameDisc = req.query.name;
+
+  if (!nameDisc) {
+    res.status(404).send({ message: "Parâmetro não recebido" });
+  }
+
+  try {
+    const discs = await Disc.find({ name: { $regex: `${nameDisc}` } });
+    res.status(200).send({discs})
+  } catch (error) {
+    res.status(500).send({error: error.message})
   }
 };
 
@@ -110,4 +126,5 @@ module.exports = {
   create,
   update,
   remove,
+  filterByNameDisc,
 };
