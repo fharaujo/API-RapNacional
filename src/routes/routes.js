@@ -209,13 +209,13 @@ routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
  *                  "200":
  *                      description: sucessful operation
  *                      schema:
- *                      $ref: '#/components/schemas/Disc'
- *                      type: array
- *                      items:
- *                          type: object
- *                      required:
- *                         artist:
- *                           type: string
+ *                          $ref: '#/components/schemas/Disc'
+ *                          type: array
+ *                          items:
+ *                              type: object
+ *                          required:
+ *                              artist:
+ *                                  type: string
  *
  *
  */
