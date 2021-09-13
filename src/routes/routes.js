@@ -169,6 +169,7 @@ routes.put("/discs/:id", DiscMiddleware.isValidId, DiscController.update);
  */
 routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
 
+// route filter by name
 /**
  * @swagger
  * /filterByNameDisc:
@@ -188,8 +189,6 @@ routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
  *              summary: Exemple of a single name
  *              value: Nome do CD  #?name=nomedocd
  */
-
-// route filter by name
 routes.get("/filterByNameDisc", DiscController.filterByNameDisc);
 
 // route filter by artist name
