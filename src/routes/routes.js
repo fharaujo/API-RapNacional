@@ -172,28 +172,28 @@ routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
 // route filter by name
 /**
  * @swagger
- * /filterByNameDisc:
- *   query:
- *      summary: Filter by name disc
- *      tags: Filter By Name
- *   parameters:
- *      - in: query
- *        name: filter
- *        description: Filter by name
- *        content:
- *           application/json:
- *              schema:
- *                type: array
- *              items: string
- *              properties: 
- *                  type:
- *                      type: string
- *                  color:
- *                      type: string
- *        examples:
- *           OnName:
- *              summary: Exemple of a single name
- *              value: Nome do CD  #?name=nomedocd
+ * paths:
+ *    /filterByNameDisc:
+ *        get:
+ *          parameters:
+ *              - in: query
+ *              name: name
+ *              type: array
+ *              items:
+ *                type: string
+ *          responses:
+ *              "200":
+ *                  description: sucessful operation
+ *                  schema:
+ *                    $ref: '#/components/schemas/Disc'
+ *                    type: array
+ *                    items:
+ *                      type: object
+ *                      required:
+ *                         name:
+ *                           type: string
+ *
+ *
  */
 routes.get("/filterByNameDisc", DiscController.filterByNameDisc);
 
