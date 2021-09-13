@@ -4,6 +4,9 @@ const Disc = require("../models/Disc");
 const getAll = async (req, res) => {
   try {
     const discs = await Disc.find(); // promise para retorno dos dados no banco
+    if(discs.length === 0){
+      res.status(404).send({message: "não existe o personagem."})
+    }
     return res.send({ discs });
   } catch (error) {
     return res.status(500).send({ err: error.message });
