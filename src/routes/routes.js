@@ -175,7 +175,7 @@ routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
  * paths:
  *    /filterByNameDisc:
  *        get:
- *          tags: [Query Filters]
+ *          tags: [Filter By name]
  *          summary: Get filter By name
  *          parameters:
  *            - in: query
@@ -194,28 +194,6 @@ routes.delete("/discs/:id", DiscMiddleware.isValidId, DiscController.remove);
  *                      required:
  *                         name:
  *                           type: string
- * 
- *    /filterByArtistName:
- *        get:
- *            tags: [Query Filters]
- *            summary: Get filter By Artist name
- *            parameters:
- *                - in: query
- *                name: artist
- *                type: array
- *                items:
- *                    type: string
- *            responses:
- *                "200":
- *                    description: sucessful operation
- *                    schema:
- *                        $ref: '#/components/schemas/Disc'
- *                        type: array
- *                        items:
- *                            type: object
- *                         required:
- *                            artist:
- *                                type: string
  *
  *
  */
