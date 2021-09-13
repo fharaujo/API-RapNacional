@@ -113,8 +113,8 @@ const filterByNameDisc = async (req, res) => {
   }
 
   try {
-    const discs = await Disc.find({ 'name': { '$regex': `${nameDisc}` } });
-    res.status(200).send({ discs });
+    const discs = await Disc.find({ name: { $regex: `${nameDisc}` } });
+    res.send({ discs });
   } catch (error) {
     res.status(500).send({ error: error.message });
   }
@@ -129,8 +129,31 @@ const filterByArtistName = async (req, res) => {
   }
 
   try {
-    const artists = await Disc.find({ 'artist': { '$regex': `${nameArtist}` } });
-    res.status(200).send({ artists });
+    const artists = await Disc.find({ artist: { $regex: `${nameArtist}` } });
+    res.send({ artists });
+  } catch (error) {
+    res.status(500).send({ error: error.message });
+  }
+};
+
+// filter all  of the disc
+const filterAll = async (req, res) => {
+  let { name, artist, companyRecord } = req.query;
+
+  !name ? (name = "") : (name = name);
+  !artist ? (artist = "") : (artist = artist);
+  !companyRecord ? (companyRecord = "") : (companyRecord = companyRecord);
+
+  try {
+    const discs = await Disc.find({
+      name: { $regex: `${name}` },
+      artist: { $regex: `${artist}` },
+      companyRecord: { $regex: `${companyRecord}` },
+    });
+    if (discs.length === 0) {
+      res.status(400).send({ message: "Disco não encontrado." });
+    }
+    res.send({ discs });
   } catch (error) {
     res.status(500).send({ error: error.message });
   }
@@ -144,4 +167,5 @@ module.exports = {
   remove,
   filterByNameDisc,
   filterByArtistName,
+  filterAll,
 };
