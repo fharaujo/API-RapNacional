@@ -230,6 +230,35 @@ routes.get("/filterByNameDisc", DiscController.filterByNameDisc);
 routes.get("/filterByArtistName", DiscController.filterByArtistName);
 
 // route filter all
+/**
+ * @swagger
+ * paths:
+ *    /filterAll:
+ *        get:
+ *          tags: [Filter all name]
+ *          summary: Query filter all
+ *          parameters:
+ *            - in: query
+ *              name: name
+ *              artist: artist
+ *              companyRecord: companyRecord
+ *              type: array
+ *              items:
+ *                type: string
+ *          responses:
+ *              "200":
+ *                  description: sucessful operation
+ *                  schema:
+ *                    $ref: '#/components/schemas/Disc'
+ *                    type: array
+ *                    items:
+ *                      type: object
+ *                      required:
+ *                         name:
+ *                           type: string
+ *
+ *
+ */
 routes.get("/filterAll", DiscController.filterAll);
 
 module.exports = routes;
