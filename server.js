@@ -30,7 +30,6 @@ const options = {
       version: "1.0.0",
       description:
         "Catálogo gerenciador dos melhores discos/cds/eps de Rap Nacional e seus respectivos artistas.",
-     
     },
     servers: [
       {
@@ -43,7 +42,6 @@ const options = {
     responses: {},
     parameters: {},
     securityDefinitions: {},
-    
   },
   apis: ["./src/routes/routes.js"], // files containing annotations as above
 };
