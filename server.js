@@ -34,10 +34,6 @@ const options = {
     servers: [
       {
         url: "https://api-rapnacional.herokuapp.com",
-        url: "https://api-rapnacional.herokuapp.com/discs",
-        url: "https://api-rapnacional.herokuapp.com//discs/:id",
-        url: "https://api-rapnacional.herokuapp.com/filterByNameDisc",
-        url: "https://api-rapnacional.herokuapp.com/filterByArtistName",
       },
     ],
     basePath: "/",
