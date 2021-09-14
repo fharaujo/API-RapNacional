@@ -4,7 +4,7 @@
 
 <p align:"center"><img src="https://uploaddeimagens.com.br/images/003/428/050/full/Novo_Projeto.png"/></p>
 
-<br><br>
+<br>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
