@@ -1,7 +1,7 @@
 
 # API Rap Nacional - 2021 [Projeto Módulo 3 - Back-end Blue Edtech]
  1.0.
-<div style="text-align:center"><img src="https://uploaddeimagens.com.br/images/003/428/050/full/Novo_Projeto.png" /></div>
+<p align:"center"><img src="https://uploaddeimagens.com.br/images/003/428/050/full/Novo_Projeto.png" /></p>
 
 
 
@@ -17,9 +17,9 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">INtrodução</a>
+      <a href="#introducao">Introdução</a>
       <ul>
-        <li><a href="#Pré-requisitos">Pré-requisitos</a></li>
+        <li><a href="#Pre-requisitos">Pré-requisitos</a></li>
         <li><a href="#installation">Instalação</a></li>
       </ul>
     </li>
@@ -82,13 +82,11 @@ não tenha, comece por aqui:
    ```
 
 
-<!-- LICENSE -->
 ## Licença
 
 Destruibdo sobre licença Mozilla Firefox. Veja mais sobre `LICENSE` 
 
 
-<!-- CONTACT -->
 ## Contato
 
 Fábio Araujo - [@fharaujo](https://www.linkedin.com/in/fharaujo/) 
