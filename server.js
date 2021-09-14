@@ -38,6 +38,18 @@ const options = {
       {
         url: "https://api-rapnacional.herokuapp.com/discs",
       },
+      {
+        url: "https://api-rapnacional.herokuapp.com/discs/id",
+      },
+      {
+        url: "https://api-rapnacional.herokuapp.com/filterByNameDisc",
+      },
+      {
+        url: "https://api-rapnacional.herokuapp.com/filterByArtistName",
+      },
+      {
+        url: "https://api-rapnacional.herokuapp.com/filterAll",
+      },
     ],
     basePath: "/",
     paths: {},
