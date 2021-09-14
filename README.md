@@ -2,7 +2,7 @@
 
 1.0.
 
-<div align:'center'><img src="https://uploaddeimagens.com.br/images/003/428/050/full/Novo_Projeto.png" style='display: flex; justify-content: center'/></div>
+<div align:'center'><img src="https://uploaddeimagens.com.br/images/003/428/050/full/Novo_Projeto.png"/></div>
 
 <br>
 
@@ -47,6 +47,7 @@ Faça parte:
 - Vida longa ao Rap Nacional.
 
 <br><br>
+
 ### Construido com:
 
 O projeto foi desenvolvido para
@@ -56,8 +57,8 @@ O projeto foi desenvolvido para
 - [MongoDB](https://www.mongodb.com)
 - [Swagger](https://swagger.io)
 
-
 <br><br>
+
 ## Introdução
 
 Aqui começa a viagem da história do rap brasileiro e esteja pronto pra a maior coleção de cds e artistas do hip-hop Brasil.
@@ -91,7 +92,9 @@ não tenha, comece por aqui:
 Destribuído sobre licença `Mozilla Public License 2.0 `
 
 ## Documentação
+
 Documentação Swagger - [Heroku](https://api-rapnacional.herokuapp.com/api-documentation/)
+
 ## Contato
 
 Fábio Araujo - [@fharaujo](https://www.linkedin.com/in/fharaujo/)
