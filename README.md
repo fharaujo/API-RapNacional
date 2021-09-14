@@ -88,7 +88,7 @@ não tenha, comece por aqui:
 
 ## Licença
 
-Destruibdo sobre licença Mozilla Firefox. Veja mais sobre `LICENSE`
+Destribuído sobre licença `Mozilla Public License 2.0 `
 
 ## Documentação
 Documentação Swagger - [Heroku](https://api-rapnacional.herokuapp.com/api-documentation/)
