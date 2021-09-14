@@ -35,6 +35,9 @@ const options = {
       {
         url: "https://api-rapnacional.herokuapp.com",
       },
+      {
+        url: "https://api-rapnacional.herokuapp.com/discs",
+      },
     ],
     basePath: "/",
     paths: {},
