@@ -57,11 +57,11 @@ O projeto foi desenvolvido para
 Aqui começa a viagem da história do rap brasileiro e esteja pronto pra a maior coleção de cds e artistas do hip-hop Brasil.
 
 
-### Prerequisites
+### Pré-requisitos
 
 Verifique se tem todas as tecnologias usadas e suas respectivas referências; caso
 não tenha, comece por aqui:
-### Installation
+### Instalação
 
 
 1. Clone o repositório
@@ -72,7 +72,7 @@ não tenha, comece por aqui:
    ```sh
    npm install
    ```
-3. COnfigure o banco de Dados MongoD para API Rap Nacional
+3. Configure o banco de Dados MongoD para API Rap Nacional
 4. Configure as variáveis de ambientes em `.envExample`
    ```JS
       DB_NAME=
@@ -83,7 +83,7 @@ não tenha, comece por aqui:
 
 
 <!-- LICENSE -->
-## License
+## Licença
 
 Destruibdo sobre licença Mozilla Firefox. Veja mais sobre `LICENSE` 
 
