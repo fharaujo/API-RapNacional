@@ -26,29 +26,15 @@ const options = {
     openapi: "3.0.0",
     info: {
       title:
-        "API Rap Nacional - 2021 [Projeto Módulo 3 - Back-end Blue Edtech]",
+        "API Rap Nacional - 2021 [Projeto Módulo 3 - Back-end Blue Edtech ",
       version: "1.0.0",
       description:
-        "Catálogo dos melhores discos/cds/eps de Rap Nacional e seus respectivos artistas.",
+        "Catálogo gerenciador dos melhores discos/cds/eps de Rap Nacional e seus respectivos artistas.",
+     
     },
     servers: [
       {
         url: "https://api-rapnacional.herokuapp.com",
-      },
-      {
-        url: "https://api-rapnacional.herokuapp.com/discs",
-      },
-      {
-        url: "https://api-rapnacional.herokuapp.com/discs/id",
-      },
-      {
-        url: "https://api-rapnacional.herokuapp.com/filterByNameDisc",
-      },
-      {
-        url: "https://api-rapnacional.herokuapp.com/filterByArtistName",
-      },
-      {
-        url: "https://api-rapnacional.herokuapp.com/filterAll",
       },
     ],
     basePath: "/",
@@ -57,6 +43,7 @@ const options = {
     responses: {},
     parameters: {},
     securityDefinitions: {},
+    
   },
   apis: ["./src/routes/routes.js"], // files containing annotations as above
 };
