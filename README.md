@@ -29,7 +29,7 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
+<br><br>
 
 ## Sobre o projeto:
 
@@ -45,6 +45,7 @@ Faça parte:
 - Use-o sem moderação, mas não se esqueça de que tudo aqui é construido em conjunto e com colaboradores apaixonados pelo RAP.
 - Vida longa ao Rap Nacional.
 
+<br><br>
 ### Construido com:
 
 O projeto foi desenvolvido para
@@ -54,6 +55,8 @@ O projeto foi desenvolvido para
 - [MongoDB](https://www.mongodb.com)
 - [Swagger](https://swagger.io)
 
+
+<br><br>
 ## Introdução
 
 Aqui começa a viagem da história do rap brasileiro e esteja pronto pra a maior coleção de cds e artistas do hip-hop Brasil.
