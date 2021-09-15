@@ -3,7 +3,7 @@ const Disc = require("../models/Disc");
 
 // get home direct url
 const homeRedirect = (req, res) =>{
-  res.redirect("https://api-rapnacional.herokuapp.com")
+  res.redirect("https://api-rapnacional.herokuapp.com/api-documentation")
 }
 
 
