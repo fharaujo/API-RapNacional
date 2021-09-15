@@ -1,5 +1,6 @@
 // importação das dependencias
 const express = require("express");
+var secure = require('express-force-https');
 const cors = require("cors");
 const swaggerUI = require("swagger-ui-express");
 const swaggerJsDoc = require("swagger-jsdoc");
@@ -19,6 +20,10 @@ app.use(routes);
 // utilizando cors
 app.use(cors());
 app.options("*", cors());
+
+// utilizando redirecionamento e forçando https
+var app = express();
+app.use(secure);
 
 // swagger documentação da API
 const options = {
@@ -53,7 +58,7 @@ app.use("/api-documentation", swaggerUI.serve, swaggerUI.setup(specs));
 app.listen(port, () => {
   try {
     console.info(
-      `Servidor rodando em: http://localhost:${port}/api-documentation`
+      `Servidor rodando em: http://localhost:${port}`
     );
   } catch (error) {
     console.log(error);
