@@ -1,6 +1,5 @@
 // importação das dependencias
 const express = require("express");
-var secure = require('express-force-https');
 const cors = require("cors");
 const swaggerUI = require("swagger-ui-express");
 const swaggerJsDoc = require("swagger-jsdoc");
@@ -21,9 +20,6 @@ app.use(routes);
 app.use(cors());
 app.options("*", cors());
 
-// utilizando redirecionamento e forçando https
-var app = express();
-app.use(secure);
 
 // swagger documentação da API
 const options = {
