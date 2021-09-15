@@ -49,6 +49,9 @@ const DiscMiddleware = require("../middlewares/DiscMiddlewares");
  *          releaseYear: 2021
  */
 
+// route home redirect
+routes.get("/", DiscController.homeRedirect);
+
 // route get all discs
 /**
  * @swagger

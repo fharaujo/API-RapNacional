@@ -1,5 +1,12 @@
 const Disc = require("../models/Disc");
 
+
+// get home direct url
+const homeRedirect = (req, res) =>{
+  res.redirect("https://api-rapnacional.herokuapp.com")
+}
+
+
 // getAll controller
 const getAll = async (req, res) => {
   try {
@@ -166,6 +173,7 @@ const filterAll = async (req, res) => {
 };
 
 module.exports = {
+  homeRedirect,
   getAll,
   getById,
   create,
