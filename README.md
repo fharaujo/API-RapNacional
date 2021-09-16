@@ -20,7 +20,7 @@
       <a href="#introducao">Introdução</a>
       <ul>
         <li><a href="#Pre-requisitos">Pré-requisitos</a></li>
-        <li><a href="#instalacao">Instalação</a></li>
+        <li><a href="#instalação">Instalação</a></li>
       </ul>
     </li>
     <li><a href="#licenca">Licença</a></li>
