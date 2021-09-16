@@ -2,7 +2,9 @@
 
 1.0.
 
-<div align:'center'><img src="https://uploaddeimagens.com.br/images/003/428/050/full/Novo_Projeto.png"/></div>
+<p align:"center">
+<img src="https://uploaddeimagens.com.br/images/003/428/050/full/Novo_Projeto.png"/> 
+</p>
 
 <br>
 
@@ -67,7 +69,7 @@ Aqui começa a viagem da história do rap brasileiro e esteja pronto pra a maior
 
 Verifique se tem todas as tecnologias usadas e suas respectivas referências; caso
 não tenha, comece por aqui:
-
+<br><br>
 ### Instalação
 
 1. Clone o repositório
@@ -86,7 +88,7 @@ não tenha, comece por aqui:
       DB_CHAR=
       DB_PASSWORD=
    ```
-
+<br><br>
 5. Rodando o projeto em ambiente de desenvolvimento
 ```sh 
 npm run dev 
@@ -96,7 +98,7 @@ npm run dev
 ```sh 
 localhost:3000/
 ```
-
+<br><br>
 
 ## Licença
 
@@ -105,7 +107,7 @@ Destribuído sobre licença `Mozilla Public License 2.0 `
 ## Documentação
 
 Documentação Swagger - [Heroku](https://api-rapnacional.herokuapp.com/api-documentation/)
-
+<br><br>
 ## Contato
 
 Fábio Araujo - [@fharaujo](https://www.linkedin.com/in/fharaujo/)
@@ -115,6 +117,7 @@ Fábio Araujo - [@fharaujo](https://www.linkedin.com/in/fharaujo/)
 Link do Projeto: [https://github.com/fharaujo/API-RapNacional](https://github.com/fharaujo/API-RapNacional)
 
 <!-- ACKNOWLEDGEMENTS -->
+<br><br>
 
 ## Agradecimentos
 
