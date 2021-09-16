@@ -23,8 +23,8 @@
         <li><a href="#instalação">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#licenca">Licença</a></li>
-    <li><a href="#documentacao">Documentação</a></li>
+    <li><a href="#licença">Licença</a></li>
+    <li><a href="#documentação">Documentação</a></li>
     <li><a href="#contato">contato</a></li>
     <li><a href="#agradecimentos">Agradecimentos</a></li>
   </ol>
@@ -52,10 +52,10 @@ Faça parte:
 
 O projeto foi desenvolvido para
 
-- [NodeJS](https://nodejs.org)
-- [Express](https://expressjs.com)
-- [MongoDB](https://www.mongodb.com)
-- [Swagger](https://swagger.io)
+- [NodeJS](https://nodejs.org) - v14.0+
+- [Express](https://expressjs.com) - v4.0+
+- [MongoDB](https://www.mongodb.com) - v5.0+
+- [Swagger](https://swagger.io) - v2.0+
 
 <br><br>
 
@@ -86,14 +86,16 @@ não tenha, comece por aqui:
       DB_CHAR=
       DB_PASSWORD=
    ```
-   
-## Rodando
 
-Em ambiente de desenvolvimento
-``` npm run dev ```
+5. Rodando o projeto em ambiente de desenvolvimento
+```sh 
+npm run dev 
+```
 
-Página swagger:
-``` localhost:3000/ ```
+6. Acessando a página swagger:
+```sh 
+localhost:3000/
+```
 
 
 ## Licença
