@@ -20,11 +20,11 @@
       <a href="#introducao">Introdução</a>
       <ul>
         <li><a href="#Pre-requisitos">Pré-requisitos</a></li>
-        <li><a href="#installation">Instalação</a></li>
+        <li><a href="#instalacao">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#licença">Licença</a></li>
-    <li><a href="#documentaçao">Documentação</a></li>
+    <li><a href="#licenca">Licença</a></li>
+    <li><a href="#documentacao">Documentação</a></li>
     <li><a href="#contato">contato</a></li>
     <li><a href="#agradecimentos">Agradecimentos</a></li>
   </ol>
@@ -86,6 +86,15 @@ não tenha, comece por aqui:
       DB_CHAR=
       DB_PASSWORD=
    ```
+   
+## Rodando
+
+Em ambiente de desenvolvimento
+``` npm run dev ```
+
+Página swagger:
+``` localhost:3000/ ```
+
 
 ## Licença
 
@@ -105,7 +114,7 @@ Link do Projeto: [https://github.com/fharaujo/API-RapNacional](https://github.co
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## Agradecimentos Especiais
+## Agradecimentos
 
 - [Mestre Thiago Lima](https://github.com/codethi)
 - [Blue Edtech](https://github.com/blue-edtech)
